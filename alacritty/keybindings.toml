@@ -1,0 +1,209 @@
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Command"
+action = "ToggleFullscreen"
+
+[[keyboard.bindings]]
+key = "T"
+mods = "Option"
+action = "CreateNewTab"
+
+[[keyboard.bindings]]
+key = "1"
+mods = "Option"
+action = "SelectTab1"
+
+[[keyboard.bindings]]
+key = "2"
+mods = "Option"
+action = "SelectTab2"
+
+[[keyboard.bindings]]
+key = "3"
+mods = "Option"
+action = "SelectTab3"
+
+[[keyboard.bindings]]
+key = "4"
+mods = "Option"
+action = "SelectTab4"
+
+[[keyboard.bindings]]
+key = "5"
+mods = "Option"
+action = "SelectTab5"
+
+# https://github.com/helderberto/dotfiles/blob/main/alacritty/.alacritty.toml
+# Creates a new tmux window (CMD + t)
+# Similar to opening a new tab in Terminal.app
+[[keyboard.bindings]]
+chars = "\u0001c"
+key = "T"
+mods = "Command"
+
+# Opens tmux preferences (CMD + ,)
+# Similar to opening preferences in macOS apps
+[[keyboard.bindings]]
+chars = "\u0001,"
+key = "Comma"
+mods = "Command"
+
+# Quick window/tab switching using CMD + number
+# Similar to Chrome/Safari tab switching
+[[keyboard.bindings]]
+chars = "\u00011"
+key = "Key1"
+mods = "Command"
+# Switch to tmux window 1
+
+[[keyboard.bindings]]
+chars = "\u00012"
+key = "Key2"
+mods = "Command"
+# Switch to tmux window 2
+
+[[keyboard.bindings]]
+chars = "\u00013"
+key = "Key3"
+mods = "Command"
+# Switch to tmux window 3
+
+[[keyboard.bindings]]
+chars = "\u00014"
+key = "Key4"
+mods = "Command"
+# Switch to tmux window 4
+
+[[keyboard.bindings]]
+chars = "\u00015"
+key = "Key5"
+mods = "Command"
+# Switch to tmux window 5
+
+[[keyboard.bindings]]
+chars = "\u00016"
+key = "Key6"
+mods = "Command"
+# Switch to tmux window 6
+
+[[keyboard.bindings]]
+chars = "\u00017"
+key = "Key7"
+mods = "Command"
+# Switch to tmux window 7
+
+[[keyboard.bindings]]
+chars = "\u00018"
+key = "Key8"
+mods = "Command"
+# Switch to tmux window 8
+
+[[keyboard.bindings]]
+chars = "\u00019"
+key = "Key9"
+mods = "Command"
+# Switch to tmux window 9
+
+# Split current pane horizontally (CMD + Shift + D)
+# Creates a new pane below the current one
+[[keyboard.bindings]]
+chars = "\u0001\""
+key = "D"
+mods = "Command|Shift"
+# tmux
+
+# Split current pane vertically (CMD + D)
+# Creates a new pane to the right of the current one
+[[keyboard.bindings]]
+chars = "\u0001%"
+key = "D"
+mods = "Command"
+# tmux
+
+
+# Save in vim/neovim (CMD + S)
+# Sends Escape :w Enter sequence
+[[keyboard.bindings]]
+chars = "\u001B:w\r"
+key = "S"
+mods = "Command"
+# tmux
+
+# Close current window/tab (CMD + W)
+# Similar to closing tabs in other macOS apps
+[[keyboard.bindings]]
+chars = "\u0001x"
+key = "W"
+mods = "Command"
+# tmux
+
+# Move cursor forward one word (Alt + Right)
+# Similar to macOS text navigation
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Alt"
+# work on term, in nvim use W
+
+# Move cursor backward one word (Alt + Left)
+# Similar to macOS text navigation
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Alt"
+# work on term, in nvim use B
+
+# Copy selected text (CMD + C)
+# Uses system clipboard
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command"
+
+# Paste text (CMD + V)
+# Pastes from system clipboard
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command"
+
+# Switch to previous tab (CMD + Left)
+# Similar to tab navigation in Safari/Chrome
+# [[keyboard.bindings]]
+# chars = "\u0001["
+# key = "Left"
+# mods = "Command"
+
+# # Switch to next tab (CMD + Right)
+# # Similar to tab navigation in Safari/Chrome
+# [[keyboard.bindings]]
+# chars = "\u0001]"
+# key = "Right"
+# mods = "Command"
+
+# Undo last action (CMD + Z)
+# Standard macOS undo shortcut
+# [[keyboard.bindings]]
+# chars = "\u0001z"
+# key = "Z"
+# mods = "Command"
+
+
+# # Scroll up in terminal (CMD + Up)
+# # Similar to page up
+# [[keyboard.bindings]]
+# chars = "\u001B[A"
+# key = "Up"
+# mods = "Command"
+
+# # Scroll down in terminal (CMD + Down)
+# # Similar to page down
+# [[keyboard.bindings]]
+# chars = "\u001B[B"
+# key = "Down"
+# mods = "Command"

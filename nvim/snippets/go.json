@@ -1,0 +1,20 @@
+{
+	"main":{
+		"prefix":"main",
+		"body":[
+			"func main() {",
+			"\t$0",
+			"}"
+		],
+		"description":"main function"
+	},
+	"struct":{
+		"prefix":"st",
+		"body":[
+			"type ${1} struct {",
+			"\t${2}",
+			"}"
+		],
+		"description":"struct"
+	}
+}
