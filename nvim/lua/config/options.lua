@@ -9,6 +9,8 @@ local opt = vim.opt
 
 g.mapleader = ","
 
+-- opt.tabstop = 4 --Number of spaces tabs count for
+-- opt.shiftwidth = 4 -- Size of an indent
 -- opt.wildmenu = true
 -- opt.wildmode = "longest:list,full"
 

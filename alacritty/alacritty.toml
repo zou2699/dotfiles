@@ -77,6 +77,6 @@ log_level = "Warn"
 print_events = false
 
 
-[colors.primary]
-background = "#0c2732"
-foreground = "#b1cbcd"
+# [colors.primary]
+# background = "#0c2732"
+# foreground = "#b1cbcd"

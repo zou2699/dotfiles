@@ -74,8 +74,8 @@ keymap.set("n", "<leader>hcw", ":HopChar1MW<cr>")
 -- use emacs shortcut in INSERT mode
 -- keymap.set("i", "<c-f>", "<Right>")
 -- keymap.set("i", "<c-b>", "<Left>")
-keymap.set("i", "<c-a>", "<Home>")
-keymap.set("i", "<c-e>", "<End>")
+-- keymap.set("i", "<c-a>", "<Home>")
+-- keymap.set("i", "<c-e>", "<End>")
 
 -- neotree
 keymap.set("n", "<leader>o", function()

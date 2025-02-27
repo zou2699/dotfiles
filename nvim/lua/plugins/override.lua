@@ -12,18 +12,18 @@ return {
     },
 
     -- disable placeHolders
-    {
-        "neovim/nvim-lspconfig",
-        opts = {
-          servers = {
-            gopls = {
-              settings = {
-                gopls = {
-                  usePlaceholders = false,
-                },
-              },
-            },
-          },
-        },
-    },
+    -- {
+    --     "neovim/nvim-lspconfig",
+    --     opts = {
+    --       servers = {
+    --         gopls = {
+    --           settings = {
+    --             gopls = {
+    --               usePlaceholders = false,
+    --             },
+    --           },
+    --         },
+    --       },
+    --     },
+    -- },
 }
