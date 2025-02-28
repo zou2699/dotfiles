@@ -1,5 +1,5 @@
 return {
-  { 
+  {
     "ellisonleao/gruvbox.nvim",
     lazy = true,
   },
@@ -47,6 +47,14 @@ return {
         which_key = true,
         blink_cmp = true,
       },
+      color_overrides = {
+        latte = {
+          -- base = "#F5F0E6",
+          base = "#F6F8ED", -- 主背景色
+          mantle = "#DDDFD5", -- 侧边栏/状态栏背景
+          crust = "#E0D8CC", -- 浮动窗口/弹层背景
+        },
+      },
     },
     specs = {
       {
@@ -63,19 +71,19 @@ return {
   {
     "folke/tokyonight.nvim",
     lazy = true,
-    opts = { 
+    opts = {
       styles = {
         keywords = { italic = false },
       },
       -- https://github.com/catppuccin/nvim/blob/7ab1a6ec70a664ecb95d84669efc20aaf4f4ed1b/lua/catppuccin/groups/integrations/treesitter.lua#L26
       -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
       on_highlights = function(hl, colors)
-        hl["@module"] = { italic = true, fg = colors.magenta}
+        hl["@module"] = { italic = true, fg = colors.magenta }
         -- hl["@keyword.conditional"] = { italic = true }
-      end
+      end,
     },
   },
-  
+
   {
     "LazyVim/LazyVim",
     opts = {
