@@ -27,29 +27,29 @@ keymap.set("n", "yH", "y^", opts)
 
 -- lsp
 -- keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Goto implementation" })
-vim.keymap.del("n", "<C-k>")
+-- vim.keymap.del("n", "<C-k>")
 -- delete lazyterm keymap
-keymap.del("n", "<leader>ft")
-keymap.del("n", "<c-_>")
+-- keymap.del("n", "<leader>ft")
+-- keymap.del("n", "<c-_>")
 
 -- general
 keymap.set("n", ";", ":", { desc = "Enter command mode", nowait = true })
 
 -- Resize window using <ctrl> arrow keys
-keymap.set("n", "<S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
-keymap.set("n", "<S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
-keymap.set("n", "<S-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-keymap.set("n", "<S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+-- keymap.set("n", "<S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+-- keymap.set("n", "<S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+-- keymap.set("n", "<S-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+-- keymap.set("n", "<S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- term
-keymap.set("n", "<c-/>", "<cmd>ToggleTerm<cr>")
-keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>")
-keymap.set("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>")
-keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>")
-keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr>")
+-- keymap.set("n", "<c-/>", "<cmd>ToggleTerm<cr>")
+-- keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>")
+-- keymap.set("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>")
+-- keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>")
+-- keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr>")
 
 -- telescope general
-keymap.set("n", "<leader>sr", "<cmd>Telescope resume<cr>", { desc = "Resume" })
+-- keymap.set("n", "<leader>sr", "<cmd>Telescope resume<cr>", { desc = "Resume" })
 -- keymap.set("n", "<leader>lds", "<cmd>Telescope lsp_document_symbols<cr>")
 -- keymap.set("n", "<leader>tgf", "<cmd>Telescope lsp_references<cr>")
 -- keymap.set("n", "<leader>cbf", "<cmd>Telescope current_buffer_fuzzy_find<cr>")
@@ -66,10 +66,10 @@ keymap.set("n", "<leader>sr", "<cmd>Telescope resume<cr>", { desc = "Resume" })
 -- keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 
 -- hop
-keymap.set("n", "<leader>hw", ":HopWord<cr>")
-keymap.set("n", "<leader>hww", ":HopWordMW<cr>")
-keymap.set("n", "<leader>hc", ":HopChar1<cr>")
-keymap.set("n", "<leader>hcw", ":HopChar1MW<cr>")
+-- keymap.set("n", "<leader>hw", ":HopWord<cr>")
+-- keymap.set("n", "<leader>hww", ":HopWordMW<cr>")
+-- keymap.set("n", "<leader>hc", ":HopChar1<cr>")
+-- keymap.set("n", "<leader>hcw", ":HopChar1MW<cr>")
 
 -- use emacs shortcut in INSERT mode
 -- keymap.set("i", "<c-f>", "<Right>")
