@@ -8,6 +8,12 @@ key = "Return"
 mods = "Command"
 action = "ToggleFullscreen"
 
+# fix toggle nvim term in tmux
+[[keyboard.bindings]]
+key = "Slash"
+mods = "Control"
+chars = "\u001f"
+
 [[keyboard.bindings]]
 key = "T"
 mods = "Option"

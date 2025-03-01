@@ -10,7 +10,10 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+docs
+
 # alacritty
 ./alacritty/themes
 
 # Neovim
+nvim-*

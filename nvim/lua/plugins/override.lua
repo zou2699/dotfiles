@@ -2,15 +2,34 @@ return {
     -- Remove keymaps from the LSP config
     {
         "neovim/nvim-lspconfig",
-        -- LSP keymaps
         init = function()
             local keys = require("lazyvim.plugins.lsp.keymaps").get()
-            -- stylua: ignore start
+            --  ignore <C-k> 
             keys[#keys + 1] = { "<C-k>", false, mode = "i" }
-            -- stylua: ignore end
         end,
     },
-
+    
+    -- update explorer keys
+    {
+        "folke/snacks.nvim",
+        opts = {
+            picker = {
+                sources = {
+                    explorer = {
+                        win = {
+                            list = {
+                                keys = {
+                                    ["o"] = false,
+                                    ["O"] = "explorer_open",
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        }
+    },
+  
     -- disable placeHolders
     -- {
     --     "neovim/nvim-lspconfig",

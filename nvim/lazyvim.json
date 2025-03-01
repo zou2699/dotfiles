@@ -1,12 +1,9 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.yanky",
-    "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.helm",
-    "lazyvim.plugins.extras.lang.markdown",
-    "lazyvim.plugins.extras.lang.toml"
+    "lazyvim.plugins.extras.lang.go"
   ],
+  "install_version": 8,
   "news": {
     "NEWS.md": "10960"
   },
