@@ -6,14 +6,14 @@ local keymap = vim.keymap
 
 -- H L
 local opts = { noremap = true, silent = true }
-keymap.set("n", "H", "^", opts)
-keymap.set("n", "L", "$", opts)
-keymap.set("n", "dL", "d$", opts)
-keymap.set("n", "dH", "d^", opts)
-keymap.set("n", "cL", "c$", opts)
-keymap.set("n", "cH", "c^", opts)
-keymap.set("n", "yL", "y$", opts)
-keymap.set("n", "yH", "y^", opts)
+-- keymap.set("n", "H", "^", opts)
+-- keymap.set("n", "L", "$", opts)
+-- keymap.set("n", "dL", "d$", opts)
+-- keymap.set("n", "dH", "d^", opts)
+-- keymap.set("n", "cL", "c$", opts)
+-- keymap.set("n", "cH", "c^", opts)
+-- keymap.set("n", "yL", "y$", opts)
+-- keymap.set("n", "yH", "y^", opts)
 
 -- 命令行模式映射
 keymap.set("c", "<c-a>", "<Home>", opts)
