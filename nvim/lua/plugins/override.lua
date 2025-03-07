@@ -31,6 +31,7 @@ return {
   },
 
   -- disable ghost_text in cmp
+  -- https://cmp.saghen.dev/configuration/general.html
   {
     "saghen/blink.cmp",
     opts = {
@@ -39,6 +40,9 @@ return {
           enabled = false,
         },
       },
+      sources = {
+        min_keyword_length = 2,
+      }
     },
   },
 

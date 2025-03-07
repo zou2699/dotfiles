@@ -1,0 +1,21 @@
+# This is the configuration file for Ghostty.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# customize
+font-family = "JetBrainsMono Nerd Font"
+font-size = 13
+
+bold-is-bright=true
+font-thicken=true
+
+macos-option-as-alt=true
+
+copy-on-select = clipboard
+clipboard-read = ask
+clipboard-write = allow
+
