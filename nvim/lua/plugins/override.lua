@@ -40,25 +40,52 @@ return {
           enabled = false,
         },
       },
-      sources = {
-        min_keyword_length = 2,
-      }
+      -- sources = {
+      -- min_keyword_length = 2,
+      -- },
+    },
+  },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      dashboard = {
+        preset = {
+          header = [[
+███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+]],
+        },
+        -- sections = {
+        --   { section = "header" },
+        --   { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
+        --   { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        --   { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+        --   { section = "startup" },
+        -- },
+      },
     },
   },
 
   -- disable go placeHolders
-  -- {
-  --     "neovim/nvim-lspconfig",
-  --     opts = {
-  --       servers = {
-  --         gopls = {
-  --           settings = {
-  --             gopls = {
-  --               usePlaceholders = false,
-  --             },
-  --           },
-  --         },
-  --       },
-  --     },
-  -- },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        gopls = {
+          settings = {
+            gopls = {
+              usePlaceholders = false,
+              hints = {
+                assignVariableTypes = false,
+              },
+            },
+          },
+        },
+      },
+    },
+  },
 }
