@@ -1,9 +1,46 @@
 return {
   {
     "LazyVim/LazyVim",
+    opts = function()
+      -- 根据背景选择主题
+      local scheme = vim.g.neovide and "github_light" or "gruvbox"
+      return {
+        colorscheme = scheme,
+      }
+    end,
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    lazy = true,
+    priority = 1000,
     opts = {
-      colorscheme = "catppuccin",
+      overrides = {
+        ["@lsp.type.namespace"] = { italic = true },
+      },
     },
+  },
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = true,
+    priority = 1000,
+    config = function()
+      require("github-theme").setup({
+        options = {
+          styles = {
+            comments = "italic",
+          },
+        },
+        groups = {
+          github_light = {
+            -- ['@module'] = {style = 'italic'  },
+            -- ['@module.go'] = {style = 'italic'  },
+            -- https://github.com/projekt0n/github-nvim-theme/blob/main/lua/github-theme/group/modules/lsp_semantic_tokens.lua
+            ["@lsp.type.namespace"] = { style = "italic" },
+            -- ['@lsp.type.namespace'] = { fg = '#228B22'  },
+          },
+        },
+      })
+    end,
   },
   {
     "catppuccin/nvim",

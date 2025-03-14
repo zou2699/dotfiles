@@ -10,22 +10,44 @@ opt.expandtab = false -- Use tabs instead of spaces
 opt.wrap = true
 opt.showbreak = "↪" -- character to show when line is broken
 
--- OSC 52
-local function paste()
-  return {
-    vim.fn.split(vim.fn.getreg(""), "\n"),
-    vim.fn.getregtype(""),
-  }
-end
+-- OSC 52, uncomment if use ssh, nvim work slowly
+-- local function paste()
+--   return {
+--     vim.fn.split(vim.fn.getreg(""), "\n"),
+--     vim.fn.getregtype(""),
+--   }
+-- end
+--
+-- vim.g.clipboard = {
+--   name = "OSC 52",
+--   copy = {
+--     ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+--     ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+--   },
+--   paste = {
+--     ["+"] = paste,
+--     ["*"] = paste,
+--   },
+-- }
 
-vim.g.clipboard = {
-  name = "OSC 52",
-  copy = {
-    ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
-    ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
-  },
-  paste = {
-    ["+"] = paste,
-    ["*"] = paste,
-  },
-}
+if vim.g.neovide then
+  -- fix cmd-c/cmd-v to copy and paste
+  vim.keymap.set("n", "<D-s>", ":w<CR>") -- Save
+  vim.keymap.set("v", "<D-c>", '"+y') -- Copy
+  vim.keymap.set("n", "<D-v>", '"+P') -- Paste normal mode
+  vim.keymap.set("v", "<D-v>", '"+P') -- Paste visual mode
+  vim.keymap.set("c", "<D-v>", "<C-R>+") -- Paste command mode
+  vim.keymap.set("i", "<D-v>", '<ESC>l"+Pli') -- Paste insert mode
+
+  -- 光标动画设置
+  vim.g.neovide_cursor_animation_length = 0.03 -- 短促的光标动画（30ms）
+  vim.g.neovide_cursor_trail_length = 0.05 -- 轻微拖尾效果
+  vim.g.neovide_cursor_trail_size = 0.5 -- 光标拖尾长度
+  vim.g.neovide_cursor_vfx_mode = "sonicboom" -- 推荐 "sonicboom"，动态且不过分花哨
+  -- vim.g.neovide_scroll_animation_length = 0.2 -- 滚动动画时长（秒）
+
+  vim.o.guifont = "JetBrainsMono Nerd Font:h14" -- text below applies for VimScript
+  vim.g.neovide_theme = "light"
+
+  vim.api.nvim_set_current_dir("~/code/")
+end
