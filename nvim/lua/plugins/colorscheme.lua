@@ -2,10 +2,21 @@ return {
   {
     "LazyVim/LazyVim",
     opts = function()
-      -- 根据背景选择主题
-      local scheme = vim.g.neovide and "github_light" or "gruvbox"
+      local function get_scheme()
+        local scheme = "gruvbox"
+        if vim.g.neovide then
+          local hour = tonumber(os.date("%H"))
+          if hour >= 8 and hour < 19 then
+            scheme = "github_light"
+            vim.g.neovide_theme = "light"
+          end
+        end
+
+        return scheme
+      end
+
       return {
-        colorscheme = scheme,
+        colorscheme = get_scheme(),
       }
     end,
   },
@@ -32,11 +43,8 @@ return {
         },
         groups = {
           github_light = {
-            -- ['@module'] = {style = 'italic'  },
-            -- ['@module.go'] = {style = 'italic'  },
             -- https://github.com/projekt0n/github-nvim-theme/blob/main/lua/github-theme/group/modules/lsp_semantic_tokens.lua
             ["@lsp.type.namespace"] = { style = "italic" },
-            -- ['@lsp.type.namespace'] = { fg = '#228B22'  },
           },
         },
       })

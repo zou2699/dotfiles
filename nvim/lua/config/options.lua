@@ -47,7 +47,6 @@ if vim.g.neovide then
   -- vim.g.neovide_scroll_animation_length = 0.2 -- 滚动动画时长（秒）
 
   vim.o.guifont = "JetBrainsMono Nerd Font:h14" -- text below applies for VimScript
-  vim.g.neovide_theme = "light"
 
   vim.api.nvim_set_current_dir("~/code/")
 end
