@@ -17,8 +17,10 @@ font-thicken = true
 adjust-cursor-thickness = 2
 cursor-color = #e66b2b
 mouse-hide-while-typing = true
+macos-titlebar-proxy-icon = hidden
 
-macos-option-as-alt = true
+macos-option-as-alt = left
+quick-terminal-screen = mouse
 
 copy-on-select = clipboard
 clipboard-read = ask

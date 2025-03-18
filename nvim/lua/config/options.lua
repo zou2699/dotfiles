@@ -43,10 +43,10 @@ if vim.g.neovide then
   vim.g.neovide_cursor_animation_length = 0.03 -- 短促的光标动画（30ms）
   vim.g.neovide_cursor_trail_length = 0.05 -- 轻微拖尾效果
   vim.g.neovide_cursor_trail_size = 0.5 -- 光标拖尾长度
-  vim.g.neovide_cursor_vfx_mode = "sonicboom" -- 推荐 "sonicboom"，动态且不过分花哨
-  -- vim.g.neovide_scroll_animation_length = 0.2 -- 滚动动画时长（秒）
+  -- vim.g.neovide_cursor_vfx_mode = "sonicboom"
 
-  vim.o.guifont = "JetBrainsMono Nerd Font:h14" -- text below applies for VimScript
+  vim.opt.guifont = { "JetBrainsMono Nerd Font", "LXGW WenKai Mono", ":h13" }
+  vim.g.neovide_input_macos_option_key_is_meta = "only_left"
 
   vim.api.nvim_set_current_dir("~/code/")
 end

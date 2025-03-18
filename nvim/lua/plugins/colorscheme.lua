@@ -31,7 +31,7 @@ return {
     },
   },
   {
-    "projekt0n/github-nvim-theme",
+    "zou2699/github-nvim-theme",
     lazy = true,
     priority = 1000,
     config = function()
@@ -45,6 +45,7 @@ return {
           github_light = {
             -- https://github.com/projekt0n/github-nvim-theme/blob/main/lua/github-theme/group/modules/lsp_semantic_tokens.lua
             ["@lsp.type.namespace"] = { style = "italic" },
+            ["@lsp.type.parameter"] = { fg = "#d4289b" },
           },
         },
       })
