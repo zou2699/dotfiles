@@ -8,7 +8,13 @@ ln -s ~/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ## MacOS
 
 ```bash
-brew install rg fzf
+xcode-select --install
+brew update
+```
+
+```bash
+brew install --cask neovide 
+brew install nvim neovide rg fzf fd 
 ```
 
 ## Debian

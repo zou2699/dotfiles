@@ -14,6 +14,9 @@ bold-is-bright = true
 font-thicken = true
 
 
+#cursor-style = block
+#shell-integration-features = no-cursor
+#cursor-style-blink = true 
 adjust-cursor-thickness = 2
 cursor-color = #e66b2b
 mouse-hide-while-typing = true
@@ -23,7 +26,7 @@ macos-option-as-alt = left
 quick-terminal-screen = mouse
 
 copy-on-select = clipboard
-clipboard-read = ask
+clipboard-read = allow
 clipboard-write = allow
 
 #window-padding-x = 10
