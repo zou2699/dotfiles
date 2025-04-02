@@ -40,9 +40,8 @@ if vim.g.neovide then
   vim.keymap.set("i", "<D-v>", '<ESC>l"+Pli') -- Paste insert mode
 
   -- 光标动画设置
-  vim.g.neovide_cursor_animation_length = 0.03 -- 短促的光标动画（30ms）
-  vim.g.neovide_cursor_trail_length = 0.05 -- 轻微拖尾效果
-  vim.g.neovide_cursor_trail_size = 0.5 -- 光标拖尾长度
+  vim.g.neovide_cursor_animation_length = 0.13 -- 短促的光标动画（30ms）
+  vim.g.neovide_cursor_trail_size = 0.1 -- 光标拖尾长度
   -- vim.g.neovide_cursor_vfx_mode = "sonicboom"
 
   vim.opt.guifont = { "JetBrainsMono Nerd Font", "LXGW WenKai Mono", ":h13" }

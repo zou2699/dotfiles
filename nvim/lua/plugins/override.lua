@@ -9,27 +9,6 @@ return {
     end,
   },
 
-  -- update explorer keys
-  {
-    "folke/snacks.nvim",
-    opts = {
-      picker = {
-        sources = {
-          explorer = {
-            win = {
-              list = {
-                keys = {
-                  ["o"] = false,
-                  ["O"] = "explorer_open",
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  },
-
   -- disable ghost_text in cmp
   -- https://cmp.saghen.dev/configuration/general.html
   {
@@ -48,6 +27,21 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      -- update explorer keys
+      picker = {
+        sources = {
+          explorer = {
+            win = {
+              list = {
+                keys = {
+                  ["o"] = false,
+                  ["O"] = "explorer_open",
+                },
+              },
+            },
+          },
+        },
+      },
       dashboard = {
         preset = {
           header = [[
@@ -59,13 +53,6 @@ return {
 ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
 ]],
         },
-        -- sections = {
-        --   { section = "header" },
-        --   { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
-        --   { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
-        --   { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-        --   { section = "startup" },
-        -- },
       },
     },
   },
