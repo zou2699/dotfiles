@@ -47,5 +47,8 @@ if vim.g.neovide then
   vim.opt.guifont = { "JetBrainsMono Nerd Font", "LXGW WenKai Mono", ":h13" }
   vim.g.neovide_input_macos_option_key_is_meta = "only_left"
 
-  vim.api.nvim_set_current_dir("~/code/")
+  -- neovide workdir
+  if vim.fn.argc() == 0 and vim.fn.getcwd() == vim.fn.expand("~") then
+    vim.api.nvim_set_current_dir(vim.fn.expand("~") .. "/code")
+  end
 end
