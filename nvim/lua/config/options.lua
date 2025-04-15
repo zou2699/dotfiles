@@ -52,3 +52,8 @@ if vim.g.neovide then
     vim.api.nvim_set_current_dir(vim.fn.expand("~") .. "/code")
   end
 end
+
+if vim.g.vscode then
+  local vscode = require('vscode')
+  vim.notify = vscode.notify
+end
