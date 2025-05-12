@@ -42,8 +42,8 @@ keymap.set("i", "<C-h>", "<left>", opts)
 keymap.set("i", "<C-l>", "<right>", opts)
 keymap.set("i", "<C-k>", "<up>", opts)
 keymap.set("i", "<C-j>", "<down>", opts)
-keymap.set("i", "<c-j>", "<c-o>gj", opts)
-keymap.set("i", "<c-k>", "<c-o>gk", opts)
+-- keymap.set("i", "<c-j>", "<c-o>gj", opts)
+-- keymap.set("i", "<c-k>", "<c-o>gk", opts)
 
 if vim.g.vscode then
   local vscode = require("vscode")
@@ -145,21 +145,21 @@ if vim.g.vscode then
   keymap.set("n", "<leader>e", function()
     vscode.call("workbench.files.action.showActiveFileInExplorer")
   end, { desc = "toggleSidebarVisibility" })
-  
+
   -- 添加书签的快捷键（例如 <leader>mm）
-  keymap.set('n', '<leader>mt', function()
-    vim.fn.VSCodeNotify('bookmarks.toggle')
+  keymap.set("n", "<leader>mt", function()
+    vim.fn.VSCodeNotify("bookmarks.toggle")
   end, { desc = "Toggle Bookmark" })
   -- 列出所有书签（例如 <leader>ml）
-  keymap.set('n', '<leader>mm', function()
-      vim.fn.VSCodeNotify('bookmarks.toggleLabeled')
+  keymap.set("n", "<leader>mm", function()
+    vim.fn.VSCodeNotify("bookmarks.toggleLabeled")
   end, { desc = "Toggle Labeled Bookmarks" })
   -- 删除所有书签（<leader>md）
-  keymap.set('n', '<leader>mc', function()
-    vim.fn.VSCodeNotify('bookmarks.clear')
+  keymap.set("n", "<leader>mc", function()
+    vim.fn.VSCodeNotify("bookmarks.clear")
   end, { desc = "Clear All Bookmarks" })
   -- 列出所有书签（例如 <leader>ml）
-  keymap.set('n', '<leader>ml', function()
-    vim.fn.VSCodeNotify('bookmarks.list')
+  keymap.set("n", "<leader>ml", function()
+    vim.fn.VSCodeNotify("bookmarks.list")
   end, { desc = "List Bookmarks" })
 end
