@@ -7,7 +7,7 @@ local opt = vim.opt
 opt.tabstop = 4 -- Number of spaces tabs count for
 opt.shiftwidth = 4 -- Size of an indent
 opt.expandtab = false -- Use tabs instead of spaces
-opt.wrap = true
+-- opt.wrap = true
 opt.showbreak = "↪" -- character to show when line is broken
 
 -- OSC 52, uncomment if use ssh, nvim work slowly
@@ -44,7 +44,8 @@ if vim.g.neovide then
   vim.g.neovide_cursor_trail_size = 0.1 -- 光标拖尾长度
   -- vim.g.neovide_cursor_vfx_mode = "sonicboom"
 
-  vim.opt.guifont = { "JetBrainsMono Nerd Font", "LXGW WenKai Mono", ":h13" }
+  -- vim.opt.guifont = { "JetBrainsMono Nerd Font", "LXGW WenKai Mono", ":h13" }
+  vim.opt.guifont = { "SauceCodePro Nerd Font", ":h14" }
   vim.g.neovide_input_macos_option_key_is_meta = "only_left"
 
   -- neovide workdir

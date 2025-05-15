@@ -26,6 +26,8 @@ return {
     priority = 1000,
     opts = {
       overrides = {
+        -- 修改 LSP 选中引用高亮
+        LspReferenceText = { bg = "#504945" },
         ["@lsp.type.namespace"] = { italic = true },
       },
     },
