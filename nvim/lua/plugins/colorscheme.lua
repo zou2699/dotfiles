@@ -25,6 +25,9 @@ return {
     lazy = true,
     priority = 1000,
     opts = {
+      italic = {
+        comments = false,
+      },
       overrides = {
         -- 修改 LSP 选中引用高亮
         LspReferenceText = { bg = "#504945" },
@@ -40,11 +43,16 @@ return {
       require("github-theme").setup({
         options = {
           styles = {
-            comments = "italic",
+            -- comments = "italic",
           },
         },
         groups = {
           github_light = {
+            -- https://github.com/projekt0n/github-nvim-theme/blob/main/lua/github-theme/group/modules/lsp_semantic_tokens.lua
+            ["@lsp.type.namespace"] = { style = "italic" },
+            ["@lsp.type.parameter"] = { fg = "#866D00" },
+          },
+          github_dark = {
             -- https://github.com/projekt0n/github-nvim-theme/blob/main/lua/github-theme/group/modules/lsp_semantic_tokens.lua
             ["@lsp.type.namespace"] = { style = "italic" },
             ["@lsp.type.parameter"] = { fg = "#866D00" },
